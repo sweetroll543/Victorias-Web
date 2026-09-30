@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITAR: título y descripción de tu página. -->
+  <title>Mi sitio | Inicio</title>
+  <meta name="description" content="Una página para compartir tus ideas, servicios y proyectos.">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <!-- EDITAR: nombre del sitio. -->
+      <a class="marca" href="#inicio"><span class="simbolo" aria-hidden="true">M</span> Mi sitio<span class="punto">.</span></a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">Menú <span aria-hidden="true">☰</span></button>
+      <!-- EDITAR MENÚ: cambia los textos y los enlaces href. -->
+      <nav id="menu" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a class="enlace-contacto" href="#contacto">Contacto <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <!-- SLIDER: reemplaza las fotos en img/ o cambia cada src. -->
+    <section id="inicio" class="slider" aria-roledescription="carrusel" aria-label="Fotografías de portada" tabindex="0">
+      <div class="diapositivas">
+        <article class="diapositiva activa" role="group" aria-roledescription="diapositiva" aria-label="1 de 3">
+          <img src="img/foto-1.jpg" alt="Lago rodeado de montañas y bosque" fetchpriority="high">
+          <div class="contenedor texto-slide"><span class="etiqueta">IDEAS QUE INSPIRAN</span><h1>Tu próxima aventura<br>comienza aquí.</h1><p>Un espacio para presentar lo que haces y compartir lo que te apasiona.</p><a class="boton" href="#nosotros">Conoce nuestro proyecto <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="2 de 3" hidden>
+          <img src="img/foto-2.jpg" alt="Río entre montañas bajo un cielo luminoso">
+          <div class="contenedor texto-slide"><span class="etiqueta">NUEVAS POSIBILIDADES</span><h2>Explora. Crea.<br>Comparte.</h2><p>Dale vida a tus ideas y encuentra nuevas formas de conectar.</p><a class="boton" href="#servicios">Descubre nuestros servicios <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="3 de 3" hidden>
+          <img src="img/foto-3.jpg" alt="Cascada entre montañas cubiertas de vegetación">
+          <div class="contenedor texto-slide"><span class="etiqueta">HAGAMOS ALGO GRANDE</span><h2>Conectemos para<br>seguir creciendo.</h2><p>Cada gran proyecto comienza con una conversación. Cuéntanos tu idea.</p><a class="boton" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <div class="contenedor controles">
+        <div class="indicadores" aria-label="Elegir fotografía">
+          <button class="indicador seleccionado" aria-label="Ver fotografía 1" aria-current="true" type="button"></button>
+          <button class="indicador" aria-label="Ver fotografía 2" type="button"></button>
+          <button class="indicador" aria-label="Ver fotografía 3" type="button"></button>
+        </div>
+        <div class="acciones-slider">
+          <button id="pausa" type="button" aria-label="Pausar cambio automático">Pausar</button>
+          <button id="anterior" type="button" aria-label="Fotografía anterior">←</button>
+          <button id="siguiente" type="button" aria-label="Fotografía siguiente">→</button>
+        </div>
+      </div>
+      <span id="estado-slider" class="solo-lector" aria-live="polite" aria-atomic="true"></span>
+    </section>
+    <section id="nosotros" class="contenedor seccion nosotros">
+      <div><span class="sobre-titulo">BIENVENIDO A MI SITIO</span><h2>Un lugar para tus<br>mejores ideas.</h2></div>
+      <div><p>Somos un equipo que cree en la creatividad, la colaboración y las nuevas oportunidades. Este espacio está listo para contar nuestra historia.</p><p>Modifica este texto para presentar tu institución, emprendimiento o proyecto personal.</p><a class="enlace" href="#contacto">Conversemos <span aria-hidden="true">→</span></a></div>
+    </section>
+    <section id="servicios" class="fondo-suave">
+      <div class="contenedor seccion"><span class="sobre-titulo">LO QUE HACEMOS</span><h2>Ideas que se convierten en acción.</h2>
+        <div class="tarjetas">
+          <article class="tarjeta"><span class="numero">01 /</span><h3>Proyectos</h3><p>Presenta aquí tus iniciativas, trabajos destacados o proyectos en desarrollo.</p></article>
+          <article class="tarjeta"><span class="numero">02 /</span><h3>Servicios</h3><p>Describe lo que ofreces y cómo puedes ayudar a quienes visitan tu página.</p></article>
+          <article class="tarjeta"><span class="numero">03 /</span><h3>Comunidad</h3><p>Comparte actividades, noticias y oportunidades para participar y colaborar.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contenedor seccion contacto"><div><span class="sobre-titulo">ESTAMOS CERCA</span><h2>¿Tienes una idea?<br>Nos gustaría conocerla.</h2><p>Edita este correo con tu dirección de contacto.</p></div><a class="boton boton-oscuro" href="mailto:contacto@tusitio.com">contacto@tusitio.com <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><div class="contenedor pie"><span>© <span id="anio">2026</span> Mi sitio. Todos los derechos reservados.</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
