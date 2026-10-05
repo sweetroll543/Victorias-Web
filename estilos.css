@@ -1,5 +1,13 @@
 /* EDITAR: cambia estos colores para personalizar el diseño. */
-:root {--principal:#D98CA1;--oscuro:#8B5E3C;--texto:#5A4032;--muted:#8B6B5A;--fondo:#F7F3ED;--blanco:#FFFFFF;--ancho:1160px;}
+:root {
+  --principal:#D98CA1;
+  --oscuro:#8B5E3C;
+  --texto:#5A4032;
+  --muted:#8B6B5A;
+  --fondo:#F7F3ED;
+  --blanco:#FFFFFF;
+  --ancho:1160px;
+}
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:90px; }
 body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--texto); background:var(--blanco); line-height:1.6; }
