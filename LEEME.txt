@@ -1,0 +1,40 @@
+PLANTILLA HTML5 — MENÚ Y SLIDER DE 3 FOTOS
+
+1. Extrae todo el ZIP. Abre index.html con doble clic en tu navegador.
+   Funciona sin conexión: no necesita instalación, librerías ni servidor.
+2. Edita los archivos con Visual Studio Code, Bloc de notas u otro editor.
+
+QUÉ MODIFICAR
+- index.html: nombre, título, textos, menú y correo de contacto.
+  Busca los comentarios EDITAR y EDITAR MENÚ.
+- css/estilos.css: colores en :root al inicio. También tamaños y espacios.
+- js/script.js: TIEMPO_SLIDER controla la velocidad (5000 = 5 segundos).
+- img/foto-1.jpg, foto-2.jpg y foto-3.jpg: reemplázalas por tus fotografías
+  manteniendo los nombres. Se recomienda 1600 x 800 px o proporción similar.
+  Si usas PNG/WebP, cambia también los src en index.html.
+  Actualiza los textos alt para describir tus nuevas fotos.
+
+MENÚ
+Los enlaces #inicio, #nosotros, #servicios y #contacto llevan a secciones
+con ese id dentro de la misma página. Puedes cambiar el texto visible.
+Para agregar un enlace, copia una etiqueta <a href="...">Texto</a>.
+Puedes enlazar a otra página con href="otra-pagina.html" o a una web
+con su dirección completa https://...
+
+SLIDER
+Tres fotos, cambio automático, flechas, indicadores, pausa, teclas de
+flecha y gesto horizontal en celular. Se pausa mientras tiene el foco,
+el ratón está sobre él o la pestaña está oculta. Si el dispositivo pide
+reducir movimiento, comienza pausado. Sin JavaScript muestra la primera foto.
+
+PUBLICACIÓN
+Sube index.html y las carpetas css, js e img a tu alojamiento web.
+Conserva su estructura. No contiene formulario ni sistema de envío:
+el botón de contacto abre la aplicación de correo del visitante.
+
+FOTOS DE EJEMPLO
+Paisajes de Lorem Picsum (fotografías de Unsplash):
+https://picsum.photos/id/1018/1600/800
+https://picsum.photos/id/1015/1600/800
+https://picsum.photos/id/1039/1600/800
+Puedes sustituirlas por fotos propias.
