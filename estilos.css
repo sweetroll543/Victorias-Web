@@ -18,6 +18,11 @@ a:focus-visible, button:focus-visible, .slider:focus-visible { outline:3px solid
 .cabecera { background:var(--blanco); position:sticky; top:0; z-index:10; border-bottom:1px solid #e7ece7; }
 .barra { min-height:88px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .marca { font-size:25px; font-weight:800; display:flex; gap:8px; align-items:center; white-space:nowrap; }
+.marca img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
 .simbolo { background:var(--oscuro); color:var(--principal); border-radius:12px; width:38px; height:38px; display:grid; place-items:center; font-size:23px; margin-right:5px; }
 .punto { color:#65872b; margin-left:-8px; }
 nav { display:flex; align-items:center; gap:32px; font-size:14px; font-weight:600; }
